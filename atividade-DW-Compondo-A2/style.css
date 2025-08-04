@@ -1,0 +1,386 @@
+/* PÁGINA MOBILE FEITO PARA A TELA DO SAMSUNG GALAXY S20+*/
+/* Conteúdos Gerais*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Conteúdos do Navbar */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.btn-group {
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    margin-right: 50px;
+}
+.bar {
+    width: 30px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: black;
+    margin: 2px;  
+}
+body {
+    background-color:rgb(255, 255, 255) ;
+}
+.navbar {
+    background-color: rgb(253, 218, 60);
+}
+/* Fim dos Conteúdos do Navbar */
+
+/* Fontes Importadas */
+@font-face {
+    font-family: 'Bangers-Regular';
+    src: url(Fonts/Bangers-Regular.ttf);
+}
+@font-face {
+    font-family: 'Nunito-Black';
+    src: url(Fonts/Nunito-Black.ttf);
+}
+@font-face {
+    font-family: 'FontAwesome';
+    src: url(Fonts/FontAwesome.otf);
+}
+@font-face {
+    font-family: 'Nunito-Bold';
+    src: url(Fonts/Nunito-Bold.ttf);
+}
+@font-face {
+    font-family: 'Ninito-ExtraBold';
+    src: url(Fonts/Nunito-ExtraBold.ttf);
+}
+@font-face {
+    font-family: 'Ninito-Regular';
+    src: url(Fonts/Nunito-Regular.ttf);
+}
+/* --Fim das fontes-- */
+
+/* Conteúdos da primeira parte */
+.background-container {
+    background-image: url(imagem/fundo.png);
+    background-size: cover;
+    background-position: bottom;
+    margin-top: px;
+    width: 100%;
+    height: 100vh; 
+    z-index: -2;   
+}
+.fundo-branco {
+    background-color: white;
+    width: 350px;
+    height: 150px;
+    margin-left: 500px;
+    border-radius: 10px;
+    z-index: 0;
+    position: relative;
+    top: 20px;
+}
+#bonecos {
+    position: relative;
+    top: 76px;
+    left: 455px;
+}
+h1 {
+    text-align: center;
+    z-index: 1;
+    font-family: Bangers-Regular;
+    color: black;
+}
+.p-1 {
+    text-align: center;
+    position: relative;
+    bottom: -50px;
+    font-family: Nunito-Bold;
+}
+.destaque {
+    font-family: Nunito-Black;
+}
+/* Fim do Conteúdos da primeira parte */
+
+/* Início do Conteúdos da segunda parte */
+.quem-somos {
+    margin: 50px;
+}
+.carousel {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    left: 400px;
+}
+h4 {
+    text-align: center;
+    z-index: 1;
+    font-family: Bangers-Regular;
+    color: black;
+    position: relative;
+    bottom: 100px;
+}
+.p-2 {
+    text-align: center;
+    position: relative;
+    bottom: -50px;
+    font-family: Nunito-Bold;
+    position: relative;
+    bottom: 100px;
+}
+.sinal {
+    border: none;
+    background-color: rgb(3, 179, 3);
+    padding: 10px;
+    border-radius: 7px;
+    position: relative;
+    top: -75px;
+    left: 620px;
+    bottom: 100px;
+    text-decoration: none;
+    font-family: Nunito-bold;
+    color: rgb(255, 255, 255);
+}
+.sinal:hover {
+    background-color: green;
+}
+/* Fim do Conteúdos da segunda parte */  
+
+/* Início do Conteúdos da terceira parte */ 
+.quem-somos-2{
+    color: yellow;
+    margin: 200px;
+    position: relative;
+    top: 75px;
+}
+.p-3 {
+    color: white;
+    text-align: center;
+    font-family: nunito-bold;
+    position: relative;
+    bottom: 50px;
+}
+.b-1 {
+    width: 300px;
+    height: 300px;
+    margin-left: 110px;
+    margin-bottom: px;
+}
+.C-1{
+    margin-top: -200px;
+}
+/* Fim do Conteúdos da terceira parte */
+
+/* Inicio do Conteúdos da quarta parte */
+.conteudo {
+    height: 200px;
+}
+.conteudo-h4 {
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    font-family: nunito-bold;
+    position: relative;
+    top: 20px;
+}
+.sinal-2 {
+    border: none;
+    background-color: rgb(3, 179, 3);
+    padding: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    border-radius: 7px;
+    position: relative;
+    top: -50px;
+    left: 490px;
+    bottom: 100px;
+    text-decoration: none;
+    font-family: Nunito-bold;
+    font-size: 30px;
+    color: white;
+}
+.sinal-2:hover {
+    background-color: green;
+}
+/* Inicio do Conteúdos Portfólio */
+.portfolio {
+    height: 600px;
+}
+.port {    
+text-align: center;
+z-index: 1;
+font-family: Bangers-Regular;
+color: black;  
+font-size: 50px;
+color: rgb(207, 52, 181);
+position: relative;
+top: 250px;
+}
+/* Fim do Conteúdos Portifólio */
+
+/* Inicio do Conteúdos Parceiros */
+.parceiros {
+    height: 340px;
+}
+.img-parceiros{
+    position: relative;
+    left: 450px;
+}
+
+.Fundo-preto{
+    height: 600px;
+    background-color: black;
+}
+.help {
+    font-family: Bangers-Regular;
+    position: relative;
+    top: 5vh;
+    text-align: center;
+    color: rgb(255, 251, 0);
+}
+.cor {
+    background-color: rgb(223, 223, 223);
+}
+.A, .B, .C {
+    color: white;
+}
+.Fundo-form{
+    background-color: rgb(250, 237, 51);
+    width: 400px;
+    height: 350px;
+    border-radius: 4%;
+    position: relative;
+    left: 480px;
+    top: 100px;
+}
+.vantagens{
+    text-align: center;
+    position: relative;
+    top: 50px;
+    color: white;
+    font-family: Nunito-black;
+}
+input, select{
+    width: 70%; 
+    padding: 12px; 
+    font-size: 14px; 
+    margin-bottom: 15px;
+    position: relative;
+    left: 50px;
+    top: 50px; 
+    border: 1px solid #d4d4d4; 
+    border-radius: 4px; 
+    box-sizing: border-box;
+    
+}
+.sign{
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bolder;
+    color: white;
+    padding: 10px;
+    background-color: green;
+    position: relative;
+    left: 130px;
+    top: 75px
+}
+.sign:hover{
+    background-color: rgb(5, 94, 5);
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center; 
+    padding: 20px; 
+    font-family: Arial, sans-serif; 
+    font-size: 14px;
+}
+
+@media (max-width: 470px) {
+    body {
+        background-color:rgb(255, 255, 255) ;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+    .btn-group{
+        margin-right: 20px;
+    }
+    .Ap1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .fundo-branco {
+        background-color: white;
+        width: 200px;
+        height: 80px;
+        margin-left: 90px;
+        border-radius: 10px;
+        z-index: 0;
+        position: relative;
+        top: 10px;
+    }
+    h1 {
+        text-align: center;
+        z-index: 1;
+        font-family: Bangers-Regular;
+        color: black;
+        font-size: 20px;
+    }
+    .p-1 {
+        font-size: 10px;
+    }
+    #bonecos {
+        width: 250px;
+        height: 150px;
+        margin-left: -400px;
+        margin-top: -48px;
+    }
+    .background-container{
+        height: 40vh;
+    }
+    .carousel{
+        width:300px;
+        height: 350px;
+        margin-left: -370px;
+    }
+    .p-2{
+        font-size: 11px;
+    }
+    .sinal{
+        margin-left: -487px;
+    }
+    .quem-somos-2{
+        position: relative;
+        left: -50px;
+    }
+    .p-3{
+        text-align: center;
+        font-size: 11px;
+    }
+    .conteudo-h4 {
+        font-size: 20px;
+    }
+    .sinal-2{
+        margin-left: -418px;
+        padding: 20px;
+        
+    }
+    .parceiros{
+        height: 230px;
+    }
+    .img-parceiros{
+        margin-left: -460px;
+        width: 400px;
+    }
+    .vantagens{
+        font-size: 12px;
+    }
+    .Fundo-form{
+        margin-left: -430px;
+        width: 300px;
+    }
+    .sign{
+        margin-left: -50px;
+    }
+}
