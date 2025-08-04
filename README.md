@@ -1,3 +1,4 @@
 # Frontend-Repository
----
-## Repositório de estudos/projetos feitos tanto na faculdade quanto estudando sozinho.
+
+## Repositório de estudos Frontend.
+###Projetos e estudos dem frontend, feito na faculdade e também sozinho.
