@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto do Game</title>
+
+</head>
+<body>
+    <section>
+        <canvas id="meu_canvas" width="800" height="300" style="border:1px solid #030303"></canvas>
+            <script>
+                var canvas = document.getElementById('meu_canvas');
+                var context = canvas.getContext('2d');
+
+                context.fillStyle = 'red';
+                context.fillRect (500, 120, 100, 100);
+
+                context.lineWidth = 3;
+                context.strokeStyle = 'blue';
+                context.strokeRect (500, 120, 100, 100);
+
+
+                context.beginPath();
+
+                context.moveTo(75, 250);
+                context.lineTo(150, 50);
+                context.lineTo(225, 250);
+                context.lineTo(50, 120);
+                context.lineTo(250, 120);
+                context.lineTo(75, 250);
+
+                context.lineWidth = 2;
+                context.strokeStyle = 'red';
+
+                context.stroke();
+            </script>
+    </section>
+</body>
+</html>
