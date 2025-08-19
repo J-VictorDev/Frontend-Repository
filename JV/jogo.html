@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Nave</title>
+</head>
+<body>
+    <canvas id="meu_canvas" width="500" height="500"></canvas>
+		<script type="text/javascript">
+			var canvas = document.getElementById('meu_canvas');
+			var context = canvas.getContext('2d');
+
+            var imagem = new Image();
+            imagem.src = 'imagens/ovni.png';
+            imagem.onload = function() {
+                //começar na posição 20
+                var x = 20;
+
+                //desenhar as imagens
+                for (var i = 1; i <= 5; i++) {
+                    context.drawImage(imagem, x, 80, 64, 32);
+                    x += 70; 
+                }
+            }
+            
+		</script>	
+        
+</body>
+</html>
