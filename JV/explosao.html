@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Nave</title>
+</head>
+<body>
+    <canvas id="meu_canvas" width="500" height="500"></canvas>
+		<script type="text/javascript">
+			var canvas = document.getElementById('meu_canvas');
+			var context = canvas.getContext('2d');
+
+            var imagem = new Image();
+            imagem.src = 'imagens/explosao.png';
+            imagem.onload = function() {
+                context.drawImage(
+                    imagem,
+                    10, 10, 70, 65, //área de recorte
+                    20, 20, 60, 65  //desenho do canvas
+                );
+                var x = 20;
+                for (var i = 1; i <= 5; i++) {
+                    context.drawImage(
+                        imagem,
+                    80, 10, 70, 65, //área de recorte
+                    60, 20, 60, 65  //desenho do canvas
+                    );
+                    x += 70; 
+                }
+                for (var i = 1; i <= 5; i++) {
+                    context.drawImage(
+                        imagem,
+                    150, 10, 70, 65, //área de recorte
+                    110, 20, 60, 65  //desenho do canvas
+                    );
+                    x += 70; 
+                }
+                for (var i = 1; i <= 5; i++) {
+                    context.drawImage(
+                        imagem,
+                    220, 10, 70, 65, //área de recorte
+                    160, 20, 60, 65  //desenho do canvas
+                    );
+                    x += 70; 
+                }
+                for (var i = 1; i <= 5; i++) {
+                    context.drawImage(
+                        imagem,
+                    280, 10, 70, 65, //área de recorte
+                    200, 20, 60, 65  //desenho do canvas
+                    );
+                    x += 70; 
+                }
+            }
+		</script>	
+        
+</body>
+</html>
