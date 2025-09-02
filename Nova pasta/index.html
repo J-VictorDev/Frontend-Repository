@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movimentando personagem com o classe Javacript.</title>
+</head>
+<body>
+    <canvas id="canvas_teclado_1" width="500" height="500"></canvas>
+    <script>
+        var canvas = document.getElementById('canvas_teclado_1');
+        var context = canvas.getContext('2d');
+
+        var posicaoX = 0;
+        var posicaoY = 0;
+        desenharPersonagem();
+            document.addEventListener('keydown', function(evento) {
+                //tecla A
+                if (evento.keyCode == 65) {
+                    posicaoX -= 10;
+                    desenharPersonagem();
+                }
+                //tecla D
+                else if (evento.keyCode == 68) {
+                    posicaoX += 10;
+                    desenharPersonagem();
+                }
+                //tecla W
+                else if(evento.keyCode == 87) {
+                    posicaoY -= 10;
+                    desenharPersonagem();
+                }
+                // tecla S
+                else if (evento.keyCode == 83) {
+                    posicaoY += 10;
+                    desenharPersonagem();
+                }
+                //tecla Q
+                else if (evento.keyCode == 81) {
+                    posicaoY -= 10;
+                    posicaoX -= 10;
+                    desenharPersonagem();
+                }
+                //tecla E
+                else if (evento.keyCode == 69) {
+                    posicaoY -= 10;
+                    posicaoX += 10;
+                    desenharPersonagem();
+                }
+            });
+
+            function desenharPersonagem() {
+                context.clearRect(0, 0, canvas.width, canvas.height);
+                context.fillRect(posicaoX, posicaoY, 20, 50);
+            }
+    </script>
+</body>
+</html>

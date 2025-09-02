@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro teste de looping para animação</title>
+    <script src="animacao.js"></script>
+    <script src="bola.js"></script>
+</head>
+<body>
+    <canvas id="canvas_animacao" width="1200" height="600"></canvas>
+   <script>
+      // Canvas e contexto
+      canvas = document.getElementById('canvas_animacao');
+      context = canvas.getContext('2d');
+      //criando alguns sprites
+      var b1 = new Bola(context);
+      b1.x = 100;
+      b1.y = 200;
+      b1.velocidadeX = 20;
+      b1.velocidadeY = -10;
+      b1.cor = 'red';
+      b1.raio = 20;
+
+      var b2 = new Bola(context);
+      b2.x = 200;
+      b2.y = 100;
+      b2.velocidadeX = -10;
+      b2.velocidadeY = 20;
+      b2.cor = 'blue';
+      b2.raio = 30;
+
+      var b3 = new Bola(context);
+      b3.x = 200;
+      b3.y = 150;
+      b3.velocidadeX = 10;
+      b3.velocidadeY = 30;
+      b3.cor = 'green';
+      b3.raio = 50;
+
+      //criando o looping de animação
+      var animacao = new Animacao(context);
+      animacao.novoSprite(b1);
+      animacao.novoSprite(b2);
+      animacao.novoSprite(b3);
+
+      //ligar animação
+      animacao.ligar();
+    </script>
+</body>
+</html>
