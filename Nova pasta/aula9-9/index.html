@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="teclado.js"></script>
+    <script src="bola.js"></script>
+    <script src="animacao.js"></script>
+    <script src="heroi.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="heroi" width="500" height="500"></canvas>
+    <script>
+        var canvas = document.getElementById('heroi');
+        var context = canvas.getContext('2d');
+        var teclado = new Teclado(document);
+        var animacao = new Animacao(context);
+
+        var heroi = new Heroi(context, teclado, animacao);
+        heroi.x = 0;
+        heroi.y = 100;
+        animacao.novoSprite(heroi);
+
+        teclado.disparou(ESPACO, function(){
+            heroi.atirar();
+        });
+        animacao.Ligar();
+    </script>
+</body>
+</html>

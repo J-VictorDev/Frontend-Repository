@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="carro.js"></script>
+</head>
+<body>
+    <script>
+        //instanciando objetos da classe Carro
+        var meuCarro1 = new Carro('vermelho', 250);
+        var meuCarro2 = new Carro('azul', 300);
+        //Chamando um método somente em um objeto
+
+        meuCarro1.acelerar();
+
+        document.write(
+        'Meu carro 1: '+ '<br>Cor: ' + meuCarro1.cor +
+        '<br> Velocidade Atual: ' + meuCarro1.velocAtual +
+        '<br> Velocidade Máxima: ' + meuCarro1.velocMaxima +
+
+        '<br><br>'+
+        'Meu carro 2: '+ '<br>Cor: ' + meuCarro2.cor +
+        '<br> Velocidade Atual: ' + meuCarro2.velocAtual +
+        '<br> Velocidade Máxima: ' + meuCarro2.velocMaxima
+        );
+        
+        document.write('<br><br>')
+
+        document.write('Dados do meu carro 1: '+ '<br>Cor: ' + meuCarro1.cor +
+        '<br> Velocidade Atual: ' + meuCarro1.velocAtual +
+        '<br> Velocidade Máxima: ' + meuCarro1.velocMaxima 
+        );
+    </script>
+    
+</body>
+</html>

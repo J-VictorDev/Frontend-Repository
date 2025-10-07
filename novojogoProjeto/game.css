@@ -1,0 +1,10 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+#canvas-jogo {
+    justify-content: center;
+    text-align: center;
+    width: 500px;
+    height: 500px;
+}

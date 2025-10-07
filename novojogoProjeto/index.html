@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <title>Jogo da nave</title>
+</head>
+<body>
+    <canvas id="canvas-jogo"></canvas>
+    <script>
+        var canvas = document.getElementById('canvas-jogo');
+        var context = canvas.getContext('2d');
+
+        context.strokeRect(50,50,20,10);
+
+        context.beinPath();
+        context.arc(50,50,40,0, 2*Math.PI);
+        context.fill();
+        context.stroke();
+    </script>
+</body>
+</html>
